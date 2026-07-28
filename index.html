@@ -30,18 +30,22 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white overflow-x-hidden">
 
-    <!-- HEADER / NAVIGATION -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
+   <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md border-b border-slate-800 w-full">
+        <div class="w-full max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-1 sm:gap-2">
             
-            <!-- Logo & Title -->
-            <a href="#" class="flex items-center space-x-2 group cursor-pointer min-w-0 flex-1 sm:flex-initial">
-                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center font-bold text-base sm:text-lg shadow-lg shadow-brand-500/20 text-white group-hover:scale-105 transition flex-shrink-0">
+            <!-- Logo & Title (Компактний на дуже вузьких екранах) -->
+            <a href="#" class="flex items-center space-x-1.5 sm:space-x-2 group cursor-pointer min-w-0 shrink">
+                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center font-bold text-sm sm:text-lg shadow-lg shadow-brand-500/20 text-white group-hover:scale-105 transition shrink-0">
                     VI
                 </div>
-                <div class="min-w-0 max-w-[130px] xs:max-w-[160px] sm:max-w-none">
-                    <span class="text-xs sm:text-base font-bold tracking-tight block text-white group-hover:text-brand-400 transition truncate">Massage Palatine</span>
-                    <span class="text-[9px] sm:text-[11px] text-slate-400 block truncate" data-translate="subtitle">Профі-масажист & Реабілітолог</span>
+                <div class="min-w-0">
+                    <span class="text-xs sm:text-base font-bold tracking-tight block text-white group-hover:text-brand-400 transition truncate max-w-[110px] xs:max-w-[150px] sm:max-w-none">
+                        Massage Palatine
+                    </span>
+                    <span class="text-[9px] sm:text-[11px] text-slate-400 hidden xs:block truncate" data-translate="subtitle">
+                        Профі-масажист & Реабілітолог
+                    </span>
                 </div>
             </a>
 
@@ -54,16 +58,16 @@
                 <a href="#contact" class="hover:text-brand-400 transition" data-translate="nav_contact">Контакти</a>
             </nav>
 
-            <!-- Right Actions: Mobile Menu BEFORE Language Switcher + Left Shift -->
-            <div class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0 mr-2 sm:mr-0">
+            <!-- Right Actions: Гамбургер + Мова (Завжди в полі зору) -->
+            <div class="flex items-center space-x-1 sm:space-x-3 shrink-0">
                 
-                <!-- Mobile Menu Button (Тепер ІДЕ ПЕРШИМ) -->
-                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white focus:outline-none">
-                    <i id="menu-icon" class="fa-solid fa-bars text-base sm:text-lg"></i>
+                <!-- Mobile Menu Button (Гамбургер перед мовою) -->
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden p-1.5 sm:p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white focus:outline-none shrink-0">
+                    <i id="menu-icon" class="fa-solid fa-bars text-sm sm:text-base"></i>
                 </button>
 
-                <!-- Language Switcher (Тепер ПІСЛЯ гамбургера) -->
-                <button onclick="toggleLanguage()" class="px-2.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-xs font-bold border border-slate-700 transition flex items-center gap-1.5 text-white">
+                <!-- Language Switcher -->
+                <button onclick="toggleLanguage()" class="px-2 py-1.5 sm:px-2.5 sm:py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-xs font-bold border border-slate-700 transition flex items-center gap-1 text-white shrink-0">
                     <i class="fa-solid fa-globe text-brand-400 text-xs"></i>
                     <span id="lang-label">EN</span>
                 </button>
