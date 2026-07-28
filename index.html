@@ -66,21 +66,21 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="h-screen w-full flex flex-col justify-center px-4 sm:px-6 lg:px-8">
+    <section class="min-h-screen w-full flex flex-col justify-center pt-24 pb-12 px-4 sm:px-6 lg:px-8 relative">
         <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-950/40 via-slate-950 to-slate-950 -z-10"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div data-aos="fade-right" data-aos-duration="1000">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center text-center lg:text-left">
+                <div data-aos="fade-right" data-aos-duration="1000" class="flex flex-col items-center lg:items-start">
                     <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-400 text-xs font-semibold mb-3 border border-brand-500/20">
                         <i class="fa-solid fa-certificate"></i> <span data-translate="hero_badge">Дипломований спеціаліст з України</span>
                     </span>
                     <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white mb-3 leading-tight">
-                        <span data-translate="hero_title_1">Професійне відновлення</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-300" data-translate="hero_title_2">та глибокий масаж</span>
+                        <span data-translate="hero_title_1">Професійне відновлення</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-300" data-translate="hero_title_2">та г глубокий масаж</span>
                     </h1>
-                    <p class="text-sm sm:text-base text-slate-300 mb-5 leading-relaxed" data-translate="hero_desc">
+                    <p class="text-sm sm:text-base text-slate-300 mb-5 leading-relaxed max-w-xl" data-translate="hero_desc">
                         Звільніться від хронічного болю, напруги та стресу. Авторські техніки, лімфодренаж, спортивний масаж, унікальна баночна терапія та спеціалізована допомога для трак-драйверів.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-3">
+                    <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
                         <a href="#services" class="px-7 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-center text-sm shadow-xl shadow-brand-600/20 transition transform hover:-translate-y-0.5" data-translate="hero_btn_services">
                             Обрати послугу
                         </a>
@@ -89,14 +89,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="relative" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="relative mx-auto max-w-md lg:max-w-none rounded-3xl p-10 md:p-14 bg-gradient-to-tr from-brand-500/30 to-slate-800 border border-slate-700 shadow-2xl overflow-hidden flex flex-col justify-center min-h-[400px]">
+                <div class="relative mt-6 lg:mt-0" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="relative mx-auto max-w-md lg:max-w-none rounded-3xl p-8 md:p-14 bg-gradient-to-tr from-brand-500/30 to-slate-800 border border-slate-700 shadow-2xl overflow-hidden flex flex-col justify-center min-h-[380px]">
                         
                         <!-- Фонове фото на всю ширину картки -->
                         <div class="absolute inset-0 bg-cover bg-center opacity-60 mix-blend-overlay" style="background-image: url('1.jpg');"></div>
                         
                         <!-- Вміст картки -->
-                        <div class="relative z-10 py-4">
+                        <div class="relative z-10 py-2">
                             <div class="w-28 h-28 mx-auto mb-4 rounded-full border-2 border-emerald-400 overflow-hidden shadow-xl bg-slate-800">
                                 <img src="master.jpg" alt="Масажист" class="w-full h-full object-cover object-top">
                             </div>
@@ -116,32 +116,32 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="py-20 bg-slate-900/50 border-y border-slate-800/60 scroll-mt-24">
+    <section id="about" class="py-16 sm:py-20 bg-slate-900/50 border-y border-slate-800/60 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
+            <div class="max-w-3xl mx-auto text-center mb-12 sm:mb-16" data-aos="fade-up">
                 <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4" data-translate="about_title">Про майстра</h2>
                 <div class="w-20 h-1.5 bg-brand-500 mx-auto rounded-full mb-6"></div>
                 <p class="text-slate-300 text-base sm:text-lg leading-relaxed" data-translate="about_text">
                     Досвідчений професіонал із глибоким розумінням анатомії людини. Маю офіційні українські дипломи та сертифікати. Допомагаю людям позбутися болю в спині, відновитися після фізичних навантажень та тривалого сидіння за кермом завдяки перевіреним авторським та класичним методикам.
                 </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-2xl mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="p-6 sm:p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition duration-300 text-center sm:text-left" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-2xl mb-6 mx-auto sm:mx-0">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3" data-translate="feat_1_title">Дипломовані навички</h3>
                     <p class="text-slate-400 text-sm leading-relaxed" data-translate="feat_1_desc">Професійні сертифікати та дипломи з України, постійне вдосконалення технік масажу.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-2xl mb-6">
+                <div class="p-6 sm:p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition duration-300 text-center sm:text-left" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-2xl mb-6 mx-auto sm:mx-0">
                         <i class="fa-solid fa-bullseye"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3" data-translate="feat_2_title">Індивідуальний підхід</h3>
                     <p class="text-slate-400 text-sm leading-relaxed" data-translate="feat_2_desc">Підбір техніки під особливості вашого організму, стану м'язів та щоденного навантаження.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-2xl mb-6">
+                <div class="p-6 sm:p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition duration-300 text-center sm:text-left" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-2xl mb-6 mx-auto sm:mx-0">
                         <i class="fa-solid fa-hand-holding-medical"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3" data-translate="feat_3_title">Глибоке полегшення</h3>
@@ -152,102 +152,102 @@
     </section>
 
     <!-- SERVICES SECTION -->
-    <section id="services" class="py-20 scroll-mt-24">
+    <section id="services" class="py-16 sm:py-20 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16" data-aos="fade-up">
                 <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4" data-translate="services_title">Види масажу та послуги</h2>
                 <div class="w-20 h-1.5 bg-brand-500 mx-auto rounded-full mb-6"></div>
                 <p class="text-slate-300 text-base" data-translate="services_subtitle">Оберіть те, що потрібно вашому тілу для повної гармонії та здоров'я</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Service 1 -->
-                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between hover:border-brand-500 transition group" data-aos="fade-up">
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 flex flex-col justify-between hover:border-brand-500 transition group text-center sm:text-left" data-aos="fade-up">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                        <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl mb-6 mx-auto sm:mx-0 group-hover:scale-110 transition">
                             <i class="fa-solid fa-droplet"></i>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_1_title">Лімфодренажний масаж</h3>
                         <p class="text-slate-400 text-sm leading-relaxed mb-6" data-translate="serv_1_desc">Стимуляція лімфотоку, зняття набряків, виведення токсинів та покращення загального тонусу організму.</p>
                     </div>
-                    <span class="text-brand-400 font-semibold text-sm flex items-center gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
+                    <span class="text-brand-400 font-semibold text-sm flex items-center justify-center sm:justify-start gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between hover:border-brand-500 transition group" data-aos="fade-up" data-aos-delay="100">
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 flex flex-col justify-between hover:border-brand-500 transition group text-center sm:text-left" data-aos="fade-up" data-aos-delay="100">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-6 mx-auto sm:mx-0 group-hover:scale-110 transition">
                             <i class="fa-solid fa-dumbbell"></i>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_2_title">Спортивний масаж</h3>
                         <p class="text-slate-400 text-sm leading-relaxed mb-6" data-translate="serv_2_desc">Інтенсивне відновлення після тренувань, розігрів м'язів, збільшення гнучкості та попередження травм.</p>
                     </div>
-                    <span class="text-brand-400 font-semibold text-sm flex items-center gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
+                    <span class="text-brand-400 font-semibold text-sm flex items-center justify-center sm:justify-start gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between hover:border-brand-500 transition group" data-aos="fade-up" data-aos-delay="200">
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 flex flex-col justify-between hover:border-brand-500 transition group text-center sm:text-left" data-aos="fade-up" data-aos-delay="200">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-6 mx-auto sm:mx-0 group-hover:scale-110 transition">
                             <i class="fa-solid fa-spa"></i>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_3_title">Антицелюлітний масаж</h3>
                         <p class="text-slate-400 text-sm leading-relaxed mb-6" data-translate="serv_3_desc">Корекція проблемних зон, покращення структури шкіри, стимуляція обмінних процесів у підшкірній клітковині.</p>
                     </div>
-                    <span class="text-brand-400 font-semibold text-sm flex items-center gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
+                    <span class="text-brand-400 font-semibold text-sm flex items-center justify-center sm:justify-start gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between hover:border-brand-500 transition group" data-aos="fade-up">
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 flex flex-col justify-between hover:border-brand-500 transition group text-center sm:text-left" data-aos="fade-up">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-6 mx-auto sm:mx-0 group-hover:scale-110 transition">
                             <i class="fa-solid fa-heart-pulse"></i>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_4_title">Оздоровчий масаж</h3>
                         <p class="text-slate-400 text-sm leading-relaxed mb-6" data-translate="serv_4_desc">Загальне зміцнення тіла, зняття спазмів з утомлених м'язів спини, шиї та попереку.</p>
                     </div>
-                    <span class="text-brand-400 font-semibold text-sm flex items-center gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
+                    <span class="text-brand-400 font-semibold text-sm flex items-center justify-center sm:justify-start gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between hover:border-brand-500 transition group" data-aos="fade-up" data-aos-delay="100">
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 flex flex-col justify-between hover:border-brand-500 transition group text-center sm:text-left" data-aos="fade-up" data-aos-delay="100">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-6 mx-auto sm:mx-0 group-hover:scale-110 transition">
                             <i class="fa-solid fa-face-smile-beam"></i>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_5_title">Релакс масаж</h3>
                         <p class="text-slate-400 text-sm leading-relaxed mb-6" data-translate="serv_5_desc">Глибоке психоемоційне розслаблення, зняття стресу, тривожності та відновлення душевного спокою.</p>
                     </div>
-                    <span class="text-brand-400 font-semibold text-sm flex items-center gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
+                    <span class="text-brand-400 font-semibold text-sm flex items-center justify-center sm:justify-start gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="rounded-2xl bg-gradient-to-br from-brand-950 to-slate-900 border border-brand-500/50 p-8 flex flex-col justify-between shadow-lg shadow-brand-950/50 relative overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                <div class="rounded-2xl bg-gradient-to-br from-brand-950 to-slate-900 border border-brand-500/50 p-6 sm:p-8 flex flex-col justify-between shadow-lg shadow-brand-950/50 relative overflow-hidden group text-center sm:text-left" data-aos="fade-up" data-aos-delay="200">
                     <div class="absolute -right-10 -bottom-10 w-32 h-32 bg-brand-500/10 rounded-full blur-2xl"></div>
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-brand-500 text-white flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                        <div class="w-12 h-12 rounded-xl bg-brand-500 text-white flex items-center justify-center text-xl mb-6 mx-auto sm:mx-0 group-hover:scale-110 transition">
                             <i class="fa-solid fa-fire"></i>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_6_title">Банково-вакуумний масаж</h3>
                         <p class="text-slate-300 text-sm leading-relaxed mb-6" data-translate="serv_6_desc">Професійне ставлення банок та вакуумна терапія для потужного міофасціального розслаблення.</p>
                     </div>
-                    <span class="text-brand-300 font-bold text-sm flex items-center gap-1"><i class="fa-solid fa-star"></i> <span data-translate="serv_key">Головна фішка майстра</span></span>
+                    <span class="text-brand-300 font-bold text-sm flex items-center justify-center sm:justify-start gap-1"><i class="fa-solid fa-star"></i> <span data-translate="serv_key">Головна фішка майстра</span></span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CUPPING SECTION -->
-    <section id="cupping" class="py-20 bg-slate-900/60 border-y border-slate-800 scroll-mt-24">
+    <section id="cupping" class="py-16 sm:py-20 bg-slate-900/60 border-y border-slate-800 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div data-aos="fade-right">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div data-aos="fade-right" class="text-center lg:text-left">
                     <span class="px-3 py-1 rounded-full bg-brand-500/10 text-brand-400 text-xs font-semibold mb-4 inline-block border border-brand-500/20" data-translate="cupping_badge">Експертна методика</span>
                     <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-6" data-translate="cupping_title">Професійне ставлення банок (Cupping Therapy)</h2>
                     <p class="text-slate-300 text-base leading-relaxed mb-6" data-translate="cupping_desc">
                         Це давня та надзвичайно ефективна техніка глибокого опрацювання м'язів і фасцій. Ставлення банок покращує мікроциркуляцію крові, знімає застійні явища у тканинах, прискорює регенерацію та дарує неймовірне полегшення у спині вже після першого сеансу.
                     </p>
-                    <div class="space-y-4 mb-8">
+                    <div class="space-y-4 mb-8 text-left max-w-lg mx-auto lg:mx-0">
                         <div class="flex items-start gap-3">
                             <div class="w-6 h-6 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center mt-1 flex-shrink-0"><i class="fa-solid fa-check text-xs"></i></div>
                             <p class="text-slate-300 text-sm" data-translate="cupping_pt_1">Знімає глибокі хронічні м'язові затиски та тригерні болі.</p>
@@ -279,15 +279,15 @@
     </section>
 
     <!-- TRUCK DRIVERS SPECIAL SECTION -->
-    <section id="truckers" class="py-20 relative overflow-hidden scroll-mt-24">
+    <section id="truckers" class="py-16 sm:py-20 relative overflow-hidden scroll-mt-20">
         <div class="absolute inset-0 bg-gradient-to-r from-amber-950/20 via-slate-950 to-slate-950 -z-10"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                 <div class="order-2 lg:order-1" data-aos="fade-right">
-                    <div class="p-8 rounded-3xl bg-slate-900 border border-amber-500/30 shadow-2xl relative">
+                    <div class="p-6 sm:p-8 rounded-3xl bg-slate-900 border border-amber-500/30 shadow-2xl relative">
                         <div class="absolute -top-3 -right-3 bg-amber-500 text-slate-950 font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider" data-translate="truck_tag">Спеціальна пропозиція</div>
-                        <h3 class="text-2xl font-bold text-white mb-4" data-translate="truck_card_title">Професійна допомога для водіїв вантажівок</h3>
-                        <p class="text-slate-300 text-sm mb-6 leading-relaxed" data-translate="truck_card_desc">
+                        <h3 class="text-2xl font-bold text-white mb-4 text-center sm:text-left" data-translate="truck_card_title">Професійна допомога для водіїв вантажівок</h3>
+                        <p class="text-slate-300 text-sm mb-6 leading-relaxed text-center sm:text-left" data-translate="truck_card_desc">
                             Багато годин за кермом трак-драйву викликають хронічне навантаження на шийний відділ, поперек та плечі. Наша команда розробла цільовий комплекс технік для зняття затисків та повного відновлення спини у водіїв далеких рейсів.
                         </p>
                         <ul class="space-y-3 text-sm text-slate-300 mb-8">
@@ -300,7 +300,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="order-1 lg:order-2" data-aos="fade-left">
+                <div class="order-1 lg:order-2 text-center lg:text-left" data-aos="fade-left">
                     <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-semibold mb-4 inline-block border border-amber-500/20" data-translate="truck_badge">Комфорт для драйверів</span>
                     <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-6" data-translate="truck_title">Масаж для трак-драйверів (Truck Drivers Massage)</h2>
                     <p class="text-slate-300 text-base leading-relaxed mb-6" data-translate="truck_desc">
@@ -312,7 +312,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="min-h-screen flex flex-col justify-center items-center px-4 relative scroll-mt-24">
+    <section id="contact" class="py-12 md:py-20 flex flex-col justify-center items-center px-4 relative scroll-mt-20">
         <div class="max-w-2xl w-full mx-auto text-center">
             
             <!-- Заголовок -->
@@ -322,7 +322,7 @@
 
             <!-- Головна картка контактів -->
             <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl backdrop-blur-md text-left">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                     
                     <!-- Кабінет -->
                     <a href="#" class="flex items-center space-x-4 p-3 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition cursor-pointer">
@@ -375,7 +375,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-12 bg-slate-950 border-t border-slate-900 text-center text-slate-500 text-sm">
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-center text-slate-500 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p>
                 © 2026 
