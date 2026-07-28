@@ -32,14 +32,14 @@
 
 <!-- HEADER / NAVIGATION -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-1.5 sm:gap-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
             
             <!-- Logo & Title -->
             <a href="#" class="flex items-center space-x-2 group cursor-pointer min-w-0 flex-1 sm:flex-initial">
                 <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center font-bold text-base sm:text-lg shadow-lg shadow-brand-500/20 text-white group-hover:scale-105 transition flex-shrink-0">
                     VI
                 </div>
-                <div class="min-w-0 max-w-[150px] xs:max-w-[180px] sm:max-w-none">
+                <div class="min-w-0 max-w-[130px] xs:max-w-[160px] sm:max-w-none">
                     <span class="text-xs sm:text-base font-bold tracking-tight block text-white group-hover:text-brand-400 transition truncate">Massage Palatine</span>
                     <span class="text-[9px] sm:text-[11px] text-slate-400 block truncate" data-translate="subtitle">Профі-масажист & Реабілітолог</span>
                 </div>
@@ -54,11 +54,16 @@
                 <a href="#contact" class="hover:text-brand-400 transition" data-translate="nav_contact">Контакти</a>
             </nav>
 
-            <!-- Right Actions: Lang + Mobile Menu Toggle (Посунуто лівіше з внутрішніми відступами) -->
-            <div class="flex items-center space-x-1.5 sm:space-x-3 flex-shrink-0 pr-1 sm:pr-0">
+            <!-- Right Actions: Mobile Menu BEFORE Language Switcher + Left Shift -->
+            <div class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0 mr-2 sm:mr-0">
                 
-                <!-- Language Switcher -->
-                <button onclick="toggleLanguage()" class="px-2 py-1.5 sm:px-2.5 sm:py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-[11px] sm:text-xs font-bold border border-slate-700 transition flex items-center gap-1 text-white">
+                <!-- Mobile Menu Button (Тепер ІДЕ ПЕРШИМ) -->
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white focus:outline-none">
+                    <i id="menu-icon" class="fa-solid fa-bars text-base sm:text-lg"></i>
+                </button>
+
+                <!-- Language Switcher (Тепер ПІСЛЯ гамбургера) -->
+                <button onclick="toggleLanguage()" class="px-2.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-xs font-bold border border-slate-700 transition flex items-center gap-1.5 text-white">
                     <i class="fa-solid fa-globe text-brand-400 text-xs"></i>
                     <span id="lang-label">EN</span>
                 </button>
@@ -68,10 +73,6 @@
                     Записатися
                 </a>
 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden p-1.5 sm:p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white focus:outline-none">
-                    <i id="menu-icon" class="fa-solid fa-bars text-base sm:text-lg"></i>
-                </button>
             </div>
         </div>
 
