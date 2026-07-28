@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massage Palatine | Professional Massage & Cupping Therapy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            dark: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white overflow-x-hidden">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group cursor-pointer">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center font-bold text-lg shadow-lg shadow-brand-500/20 text-white group-hover:scale-105 transition">
+                    VI
+                </div>
+                <div>
+                    <span class="text-base font-bold tracking-tight block text-white group-hover:text-brand-400 transition">Massage Palatine</span>
+                    <span class="text-[11px] text-slate-400 block" data-translate="subtitle">Профі-масажист & Реабілітолог</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-brand-400 transition" data-translate="nav_about">Про мене</a>
+                <a href="#services" class="hover:text-brand-400 transition" data-translate="nav_services">Послуги</a>
+                <a href="#cupping" class="hover:text-brand-400 transition" data-translate="nav_cupping">Баночний масаж</a>
+                <a href="#truckers" class="hover:text-brand-400 transition text-amber-400" data-translate="nav_truckers">Для Трак-Драйверів</a>
+                <a href="#contact" class="hover:text-brand-400 transition" data-translate="nav_contact">Контакти</a>
+            </nav>
+
+            <!-- Actions & Lang Switcher -->
+            <div class="flex items-center space-x-3">
+                <button onclick="toggleLanguage()" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-xs font-bold border border-slate-700 transition flex items-center gap-1.5 text-white">
+                    <i class="fa-solid fa-globe text-brand-400"></i>
+                    <span id="lang-label">EN</span>
+                </button>
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-xl bg-gradient-to-r from-brand-600 to-emerald-500 text-white font-semibold text-xs shadow-lg shadow-brand-600/30 hover:scale-105 transition duration-300" data-translate="cta_book">
+                    Записатися
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="h-screen w-full flex flex-col justify-center px-4 sm:px-6 lg:px-8">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-950/40 via-slate-950 to-slate-950 -z-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-400 text-xs font-semibold mb-3 border border-brand-500/20">
+                        <i class="fa-solid fa-certificate"></i> <span data-translate="hero_badge">Дипломований спеціаліст з України</span>
+                    </span>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white mb-3 leading-tight">
+                        <span data-translate="hero_title_1">Професійне відновлення</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-300" data-translate="hero_title_2">та глибокий масаж</span>
+                    </h1>
+                    <p class="text-sm sm:text-base text-slate-300 mb-5 leading-relaxed" data-translate="hero_desc">
+                        Звільніться від хронічного болю, напруги та стресу. Авторські техніки, лімфодренаж, спортивний масаж, унікальна баночна терапія та спеціалізована допомога для трак-драйверів.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="#services" class="px-7 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-center text-sm shadow-xl shadow-brand-600/20 transition transform hover:-translate-y-0.5" data-translate="hero_btn_services">
+                            Обрати послугу
+                        </a>
+                        <a href="#contact" class="px-7 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-center text-sm border border-slate-700 transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calendar-check text-brand-400"></i> <span data-translate="cta_book">Записатися</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="relative mx-auto max-w-md lg:max-w-none rounded-3xl p-10 md:p-14 bg-gradient-to-tr from-brand-500/30 to-slate-800 border border-slate-700 shadow-2xl overflow-hidden flex flex-col justify-center min-h-[400px]">
+                        
+                        <!-- Фонове фото на всю ширину картки -->
+                        <div class="absolute inset-0 bg-cover bg-center opacity-60 mix-blend-overlay" style="background-image: url('1.jpg');"></div>
+                        
+                        <!-- Вміст картки -->
+                        <div class="relative z-10 py-4">
+                            <div class="w-28 h-28 mx-auto mb-4 rounded-full border-2 border-emerald-400 overflow-hidden shadow-xl bg-slate-800">
+                                <img src="master.jpg" alt="Масажист" class="w-full h-full object-cover object-top">
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-2 text-center">Massage Palatine</h3>
+                            <p class="text-slate-200 text-sm md:text-base mb-6 text-center font-medium drop-shadow-sm" data-translate="expert_desc">Експерт з міофасціального та баночного масажу</p>
+                            
+                            <div class="flex justify-center gap-3 text-xs font-semibold text-brand-300 flex-wrap">
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700 shadow" data-translate="tag_exp">15+ Років досвіду</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700 shadow" data-translate="tag_method">Авторська методика</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-slate-900/50 border-y border-slate-800/60 scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4" data-translate="about_title">Про майстра</h2>
+                <div class="w-20 h-1.5 bg-brand-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed" data-translate="about_text">
+                    Досвідчений професіонал із глибоким розумінням анатомії людини. Маю офіційні українські дипломи та сертифікати. Допомагаю людям позбутися болю в спині, відновитися після фізичних навантажень та тривалого сидіння за кермом завдяки перевіреним авторським та класичним методикам.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3" data-translate="feat_1_title">Дипломовані навички</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed" data-translate="feat_1_desc">Професійні сертифікати та дипломи з України, постійне вдосконалення технік масажу.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3" data-translate="feat_2_title">Індивідуальний підхід</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed" data-translate="feat_2_desc">Підбір техніки під особливості вашого організму, стану м'язів та щоденного навантаження.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3" data-translate="feat_3_title">Глибоке полегшення</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed" data-translate="feat_3_desc">Ефективна робота з тригерними точками, затисками та глибокими шарами м'язів.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4" data-translate="services_title">Види масажу та послуги</h2>
+                <div class="w-20 h-1.5 bg-brand-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-slate-300 text-base" data-translate="services_subtitle">Оберіть те, що потрібно вашому тілу для повної гармонії та здоров'я</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between hover:border-brand-500 transition group" data-aos="fade-up">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_1_title">Лімфодренажний масаж</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6" data-translate="serv_1_desc">Стимуляція лімфотоку, зняття набряків, виведення токсинів та покращення загального тонусу організму.</p>
+                    </div>
+                    <span class="text-brand-400 font-semibold text-sm flex items-center gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between hover:border-brand-500 transition group" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_2_title">Спортивний масаж</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6" data-translate="serv_2_desc">Інтенсивне відновлення після тренувань, розігрів м'язів, збільшення гнучкості та попередження травм.</p>
+                    </div>
+                    <span class="text-brand-400 font-semibold text-sm flex items-center gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between hover:border-brand-500 transition group" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_3_title">Антицелюлітний масаж</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6" data-translate="serv_3_desc">Корекція проблемних зон, покращення структури шкіри, стимуляція обмінних процесів у підшкірній клітковині.</p>
+                    </div>
+                    <span class="text-brand-400 font-semibold text-sm flex items-center gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between hover:border-brand-500 transition group" data-aos="fade-up">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_4_title">Оздоровчий масаж</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6" data-translate="serv_4_desc">Загальне зміцнення тіла, зняття спазмів з утомлених м'язів спини, шиї та попереку.</p>
+                    </div>
+                    <span class="text-brand-400 font-semibold text-sm flex items-center gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between hover:border-brand-500 transition group" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-face-smile-beam"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_5_title">Релакс масаж</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6" data-translate="serv_5_desc">Глибоке психоемоційне розслаблення, зняття стресу, тривожності та відновлення душевного спокою.</p>
+                    </div>
+                    <span class="text-brand-400 font-semibold text-sm flex items-center gap-1"><i class="fa-solid fa-check"></i> <span data-translate="serv_ready">Готово до запису</span></span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="rounded-2xl bg-gradient-to-br from-brand-950 to-slate-900 border border-brand-500/50 p-8 flex flex-col justify-between shadow-lg shadow-brand-950/50 relative overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -right-10 -bottom-10 w-32 h-32 bg-brand-500/10 rounded-full blur-2xl"></div>
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-500 text-white flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3" data-translate="serv_6_title">Банково-вакуумний масаж</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6" data-translate="serv_6_desc">Професійне ставлення банок та вакуумна терапія для потужного міофасціального розслаблення.</p>
+                    </div>
+                    <span class="text-brand-300 font-bold text-sm flex items-center gap-1"><i class="fa-solid fa-star"></i> <span data-translate="serv_key">Головна фішка майстра</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUPPING SECTION -->
+    <section id="cupping" class="py-20 bg-slate-900/60 border-y border-slate-800 scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <span class="px-3 py-1 rounded-full bg-brand-500/10 text-brand-400 text-xs font-semibold mb-4 inline-block border border-brand-500/20" data-translate="cupping_badge">Експертна методика</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-6" data-translate="cupping_title">Професійне ставлення банок (Cupping Therapy)</h2>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6" data-translate="cupping_desc">
+                        Це давня та надзвичайно ефективна техніка глибокого опрацювання м'язів і фасцій. Ставлення банок покращує мікроциркуляцію крові, знімає застійні явища у тканинах, прискорює регенерацію та дарує неймовірне полегшення у спині вже після першого сеансу.
+                    </p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center mt-1 flex-shrink-0"><i class="fa-solid fa-check text-xs"></i></div>
+                            <p class="text-slate-300 text-sm" data-translate="cupping_pt_1">Знімає глибокі хронічні м'язові затиски та тригерні болі.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center mt-1 flex-shrink-0"><i class="fa-solid fa-check text-xs"></i></div>
+                            <p class="text-slate-300 text-sm" data-translate="cupping_pt_2">Стимулює обмін речовин та прискорює виведення токсинів.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center" data-aos="fade-left">
+                    <div class="w-full max-w-sm rounded-3xl bg-slate-900 border border-slate-700/80 p-8 shadow-2xl relative overflow-hidden">
+                        <div class="absolute -right-12 -top-12 w-32 h-32 bg-brand-500/20 rounded-full blur-xl"></div>
+                        <div class="text-center relative z-10">
+                            <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center text-white text-3xl shadow-lg shadow-brand-500/20">
+                                <i class="fa-solid fa-shield-heart"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3" data-translate="card_feature_title">Гарантія безпеки та якості</h3>
+                            <p class="text-slate-400 text-sm mb-6 leading-relaxed" data-translate="card_feature_desc">Індивідуальний підбір вакууму та стерильні матеріали для комфортного та безпечного сеансу.</p>
+                            <a href="#contact" class="inline-flex items-center justify-center w-full py-3.5 px-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-sm font-bold shadow-lg shadow-brand-600/30 transition">
+                                <span data-translate="cta_book">Записатися</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUCK DRIVERS SPECIAL SECTION -->
+    <section id="truckers" class="py-20 relative overflow-hidden scroll-mt-24">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-950/20 via-slate-950 to-slate-950 -z-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1" data-aos="fade-right">
+                    <div class="p-8 rounded-3xl bg-slate-900 border border-amber-500/30 shadow-2xl relative">
+                        <div class="absolute -top-3 -right-3 bg-amber-500 text-slate-950 font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider" data-translate="truck_tag">Спеціальна пропозиція</div>
+                        <h3 class="text-2xl font-bold text-white mb-4" data-translate="truck_card_title">Професійна допомога для водіїв вантажівок</h3>
+                        <p class="text-slate-300 text-sm mb-6 leading-relaxed" data-translate="truck_card_desc">
+                            Багато годин за кермом трак-драйву викликають хронічне навантаження на шийний відділ, поперек та плечі. Наша команда розробла цільовий комплекс технік для зняття затисків та повного відновлення спини у водіїв далеких рейсів.
+                        </p>
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> <span data-translate="truck_pt_1">Зняття болю в попереку від сидіння</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> <span data-translate="truck_pt_2">Розслаблення затерплих шиї та плечей</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> <span data-translate="truck_pt_3">Швидке відновлення перед наступним рейсом</span></li>
+                        </ul>
+                        <a href="#contact" class="block text-center py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition shadow-lg shadow-amber-500/20" data-translate="truck_btn">
+                            Записатися на сеанс для водіїв
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2" data-aos="fade-left">
+                    <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-semibold mb-4 inline-block border border-amber-500/20" data-translate="truck_badge">Комфорт для драйверів</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-6" data-translate="truck_title">Масаж для трак-драйверів (Truck Drivers Massage)</h2>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6" data-translate="truck_desc">
+                        Робота водія вантажівки пов'язана з постійним статичним навантаженням. Організм потребує професійного догляду, щоб уникнути міжхребцевих гриж та хронічного стомлення. Ми знаємо, як повернути вашому тілу легкість та свободу рухів.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="min-h-screen flex flex-col justify-center items-center px-4 relative scroll-mt-24">
+        <div class="max-w-2xl w-full mx-auto text-center">
+            
+            <!-- Заголовок -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3" data-translate="contact_title">Контакти та Запис</h2>
+            <div class="w-20 h-1 bg-green-500 mx-auto mb-4 rounded-full"></div>
+            <p class="text-slate-300 mb-8 text-sm md:text-base" data-translate="contact_subtitle">Зв'яжіться зручним для вас способом</p>
+
+            <!-- Головна картка контактів -->
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl backdrop-blur-md text-left">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    
+                    <!-- Кабінет -->
+                    <a href="#" class="flex items-center space-x-4 p-3 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition cursor-pointer">
+                        <div class="w-12 h-12 flex items-center justify-center bg-green-600/20 text-green-400 rounded-xl text-xl flex-shrink-0">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400" data-translate="contact_clinic_label">Масажний кабінет</div>
+                            <div class="text-white font-semibold">Massage Palatine</div>
+                        </div>
+                    </a>
+
+                    <!-- Телефон -->
+                    <a href="tel:+12245194009" class="flex items-center space-x-4 p-3 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition">
+                        <div class="w-12 h-12 flex items-center justify-center bg-green-600/20 text-green-400 rounded-xl text-xl flex-shrink-0">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400" data-translate="contact_phone_label">Телефон / Месенджери</div>
+                            <div class="text-white font-semibold">+1 (224) 519-4009</div>
+                        </div>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 p-3 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition">
+                        <div class="w-12 h-12 flex items-center justify-center bg-blue-600/20 text-blue-400 rounded-xl text-xl flex-shrink-0">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Facebook</div>
+                            <div class="text-white font-semibold">Masage Palatine</div>
+                        </div>
+                    </a>
+
+                    <!-- Локація з картами -->
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=1301+N+Rand+Rd,+Palatine,+IL+60074" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 p-3 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition">
+                        <div class="w-12 h-12 flex items-center justify-center bg-red-600/20 text-red-400 rounded-xl text-xl flex-shrink-0">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400" data-translate="contact_loc_label">Локація</div>
+                            <div class="text-white font-semibold text-sm">1301 N Rand Rd, Palatine, IL</div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-900 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p>
+                © 2026 
+                <a href="https://nexgen-fullstack.github.io/visitcard/#contact" target="_blank" class="text-brand-400 hover:underline font-semibold">NEXGEN</a>. 
+                <span data-translate="footer_rights">All rights reserved. Професійний масажний кабінет.</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Словник перекладу (UA / EN)
+        const translations = {
+            uk: {
+                subtitle: "Профі-масажист & Реабілітолог",
+                nav_about: "Про мене",
+                nav_services: "Послуги",
+                nav_cupping: "Баночний масаж",
+                nav_truckers: "Для Трак-Драйверів",
+                nav_contact: "Контакти",
+                cta_book: "Записатися",
+                hero_badge: "Дипломований спеціаліст з України",
+                hero_title_1: "Професійне відновлення",
+                hero_title_2: "та глибокий масаж",
+                hero_desc: "Звільніться від хронічного болю, напруги та стресу. Авторські техніки, лімфодренаж, спортивний масаж, унікальна баночна терапія та спеціалізована допомога для трак-драйверів.",
+                hero_btn_services: "Обрати послугу",
+                expert_desc: "Експерт з міофасціального та баночного масажу",
+                tag_exp: "15+ Років досвіду",
+                tag_method: "Авторська методика",
+                about_title: "Про майстра",
+                about_text: "Досвідчений професіонал із глибоким розумінням анатомії людини. Маю офіційні українські дипломи та сертифікати. Допомагаю людям позбутися болю в спині, відновитися після фізичних навантажень та тривалого сидіння за кермом завдяки перевіреним авторським та класичним методикам.",
+                feat_1_title: "Дипломовані навички",
+                feat_1_desc: "Професійні сертифікати та дипломи з України, постійне вдосконалення технік масажу.",
+                feat_2_title: "Індивідуальний підхід",
+                feat_2_desc: "Підбір техніки під особливості вашого організму, стану м'язів та щоденного навантаження.",
+                feat_3_title: "Глибоке полегшення",
+                feat_3_desc: "Ефективна робота з тригерними точками, затисками та глибокими шарами м'язів.",
+                services_title: "Види масажу та послуги",
+                services_subtitle: "Оберіть те, що потрібно вашому тілу для повної гармонії та здоров'я",
+                serv_1_title: "Лімфодренажний масаж",
+                serv_1_desc: "Стимуляція лімфотоку, зняття набряків, виведення токсинів та покращення загального тонусу організму.",
+                serv_2_title: "Спортивний масаж",
+                serv_2_desc: "Інтенсивне відновлення після тренувань, розігрів м'язів, збільшення гнучкості та попередження травм.",
+                serv_3_title: "Антицелюлітний масаж",
+                serv_3_desc: "Корекція проблемних зон, покращення структури шкіри, стимуляція обмінних процесів у підшкірній клітковині.",
+                serv_4_title: "Оздоровчий масаж",
+                serv_4_desc: "Загальне зміцнення тіла, зняття спазмів з утомлених м'язів спини, шиї та попереку.",
+                serv_5_title: "Релакс масаж",
+                serv_5_desc: "Глибоке психоемоційне розслаблення, зняття стресу, тривожності та відновлення душевного спокою.",
+                serv_6_title: "Банково-вакуумний масаж",
+                serv_6_desc: "Професійне ставлення банок та вакуумна терапія для потужного міофасціального розслаблення.",
+                serv_ready: "Готово до запису",
+                serv_key: "Головна фішка майстра",
+                cupping_badge: "Експертна методика",
+                cupping_title: "Професійне ставлення банок (Cupping Therapy)",
+                cupping_desc: "Це давня та надзвичайно ефективна техніка глибокого опрацювання м'язів і фасцій. Ставлення банок покращує мікроциркуляцію крові, знімає застійні явища у тканинах, прискорює регенерацію та дарує неймовірне полегшення у спині вже після першого сеансу.",
+                cupping_pt_1: "Знімає глибокі хронічні м'язові затиски та тригерні болі.",
+                cupping_pt_2: "Стимулює обмін речовин та прискорює виведення токсинів.",
+                card_feature_title: "Гарантія безпеки та якості",
+                card_feature_desc: "Індивідуальний підбір вакууму та стерильні матеріали для комфортного та безпечного сеансу.",
+                truck_tag: "Спеціальна пропозиція",
+                truck_card_title: "Професійна допомога для водіїв вантажівок",
+                truck_card_desc: "Багато годин за кермом трак-драйву викликають хронічне навантаження на шийний відділ, поперек та плечі. Наша команда розробла цільовий комплекс технік для зняття затисків та повного відновлення спини у водіїв далеких рейсів.",
+                truck_pt_1: "Зняття болю в попереку від сидіння",
+                truck_pt_2: "Розслаблення затерплих шиї та плечей",
+                truck_pt_3: "Швидке відновлення перед наступним рейсом",
+                truck_btn: "Записатися на сеанс для водіїв",
+                truck_badge: "Комфорт для драйверів",
+                truck_title: "Масаж для трак-драйверів (Truck Drivers Massage)",
+                truck_desc: "Робота водія вантажівки пов'язана з постійним статичним навантаженням. Організм потребує професійного догляду, щоб уникнути міжхребцевих гриж та хронічного стомлення. Ми знаємо, як повернути вашому тілу легкість та свободу рухів.",
+                contact_title: "Контакти та Запис",
+                contact_subtitle: "Зв'яжіться зручним для вас способом",
+                contact_clinic_label: "Масажний кабінет",
+                contact_phone_label: "Телефон / Месенджери",
+                contact_loc_label: "Локація",
+                footer_rights: "All rights reserved. Професійний масажний кабінет."
+            },
+            en: {
+                subtitle: "Pro Massage Therapist & Rehab Specialist",
+                nav_about: "About",
+                nav_services: "Services",
+                nav_cupping: "Cupping Therapy",
+                nav_truckers: "For Truck Drivers",
+                nav_contact: "Contact",
+                cta_book: "Book Now",
+                hero_badge: "Certified Specialist from Ukraine",
+                hero_title_1: "Professional Recovery",
+                hero_title_2: "& Deep Massage",
+                hero_desc: "Get rid of chronic pain, tension, and stress. Author's techniques, lymphatic drainage, sports massage, unique cupping therapy, and specialized care for truck drivers.",
+                hero_btn_services: "Choose Service",
+                expert_desc: "Myofascial & Cupping Massage Expert",
+                tag_exp: "15+ Years Experience",
+                tag_method: "Author's Technique",
+                about_title: "About the Master",
+                about_text: "An experienced professional with a deep understanding of human anatomy. Holds official Ukrainian diplomas and certificates. Helping people relieve back pain, recover from physical strain, and long hours behind the wheel through proven author and classical methods.",
+                feat_1_title: "Certified Skills",
+                feat_1_desc: "Professional certificates and diplomas from Ukraine, continuous improvement of massage techniques.",
+                feat_2_title: "Individual Approach",
+                feat_2_desc: "Tailoring techniques to your body's features, muscle condition, and daily workload.",
+                feat_3_title: "Deep Relief",
+                feat_3_desc: "Effective work with trigger points, tension blocks, and deep muscle layers.",
+                services_title: "Massage Types & Services",
+                services_subtitle: "Choose what your body needs for complete harmony and health",
+                serv_1_title: "Lymphatic Drainage Massage",
+                serv_1_desc: "Stimulation of lymph flow, reduction of swelling, toxin elimination, and overall body tone improvement.",
+                serv_2_title: "Sports Massage",
+                serv_2_desc: "Intensive recovery after workouts, muscle warming, flexibility increase, and injury prevention.",
+                serv_3_title: "Anti-Cellulite Massage",
+                serv_3_desc: "Correction of problem areas, skin structure improvement, stimulation of metabolic processes in subcutaneous tissue.",
+                serv_4_title: "Wellness Massage",
+                serv_4_desc: "General body strengthening, relief of spasms from tired back, neck, and lower back muscles.",
+                serv_5_title: "Relax Massage",
+                serv_5_desc: "Deep psycho-emotional relaxation, stress relief, anxiety reduction, and peace of mind restoration.",
+                serv_6_title: "Vacuum Cupping Massage",
+                serv_6_desc: "Professional cup placement and vacuum therapy for powerful myofascial relaxation.",
+                serv_ready: "Ready to book",
+                serv_key: "Master's Signature Feature",
+                cupping_badge: "Expert Technique",
+                cupping_title: "Professional Cupping Therapy",
+                cupping_desc: "This is an ancient and extremely effective technique for deep processing of muscles and fascia. Cupping improves blood microcirculation, relieves tissue congestion, accelerates regeneration, and grants incredible back relief after the very first session.",
+                cupping_pt_1: "Relieves deep chronic muscle tension and trigger pain.",
+                cupping_pt_2: "Stimulates metabolism and accelerates toxin removal.",
+                card_feature_title: "Safety & Quality Guarantee",
+                card_feature_desc: "Individual vacuum selection and sterile materials for a comfortable and safe session.",
+                truck_tag: "Special Offer",
+                truck_card_title: "Professional Care for Truck Drivers",
+                truck_card_desc: "Long hours behind the wheel cause chronic stress on the neck, lower back, and shoulders. Our team has developed a targeted set of techniques to relieve tension and fully restore the backs of long-haul drivers.",
+                truck_pt_1: "Relief from lower back pain caused by sitting",
+                truck_pt_2: "Relaxation of stiff neck and shoulders",
+                truck_pt_3: "Quick recovery before the next trip",
+                truck_btn: "Book a Session for Drivers",
+                truck_badge: "Driver Comfort",
+                truck_title: "Truck Drivers Massage",
+                truck_desc: "A truck driver's job involves constant static strain. The body needs professional care to avoid herniated discs and chronic fatigue. We know how to bring lightness and freedom of movement back to your body.",
+                contact_title: "Contact & Booking",
+                contact_subtitle: "Get in touch in a convenient way",
+                contact_clinic_label: "Massage Studio",
+                contact_phone_label: "Phone / Messengers",
+                contact_loc_label: "Location",
+                footer_rights: "All rights reserved. Professional Massage Studio."
+            }
+        };
+
+        let currentLang = 'uk';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'uk' ? 'en' : 'uk';
+            document.getElementById('lang-label').innerText = currentLang === 'uk' ? 'EN' : 'UA';
+            document.documentElement.lang = currentLang;
+            
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[currentLang] && translations[currentLang][key]) {
+                    el.innerText = translations[currentLang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
